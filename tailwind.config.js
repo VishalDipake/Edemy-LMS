@@ -12,7 +12,9 @@ export default {
         'home-heading-small': ['28px','34px'],
         'home-heading-large': ['48px','56px'],
       },
-    },
+
+      
   },
+},
   plugins: [],
 }

@@ -13,6 +13,7 @@ export default {
         'home-heading-large': ['48px','56px'],
       },
 
+    
       
   },
 },

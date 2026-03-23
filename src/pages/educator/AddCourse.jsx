@@ -187,7 +187,7 @@ const AddCourse = () => {
         <div className='flex flex-col gap-1'>
           <p>Discount %</p>
           <input onChange={e => setDiscount(e.target.value)} value={discount}
-          type="numbe" placeholder='0' min={0} max={100} className='outline-none
+          type="number" placeholder='0' min={0} max={100} className='outline-none
           md:py-2.5 py-2 w-28 px-3 rounded border border-gray-500' required />
 
         </div>
@@ -283,7 +283,7 @@ const AddCourse = () => {
                   className='mt-1 scale-125'
                  checked={lectureDetails.isPreviewFree}
                   onChange={(e) => setLectureDetails({ ...lectureDetails,
-                    isPreviewFree: e.target.value  })}
+                    isPreviewFree: e.target.checked  })}
                  />
                 </div>
 

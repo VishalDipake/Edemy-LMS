@@ -3,6 +3,7 @@ import Course from '../models/Course.js';
 import { v2 as cloudinary } from 'cloudinary'
 import { Purchase } from '../models/purchase.js';
 import { DashboardAccessOut } from 'svix';
+import User from '../models/User.js'
 
 
 // Update Role To educator

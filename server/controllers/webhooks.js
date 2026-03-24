@@ -48,7 +48,8 @@ export const clerkWebhooks = async (req, res)=> {
                 break;
             }
 
-            default:
+            default:    
+            res.json({})
                 break;
 
         }

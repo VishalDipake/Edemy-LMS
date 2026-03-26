@@ -27,8 +27,12 @@ export const userEnrolledCourses = async (req, res) => {
     try {
         const { userId } = req.auth()
 
-        // ✅ FIX
         const userData = await User.findById(userId).populate('enrolledCourses')
+
+        // ✅ Add this null check
+        if(!userData){
+            return res.json({ success: false, message: 'User not found' })
+        }
 
         res.json({
             success: true,

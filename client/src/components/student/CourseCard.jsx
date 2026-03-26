@@ -12,7 +12,7 @@ const CourseCard = ({course}) => {
     className = 'border border-gray-500/30 pb-6 overflow-hidden rounded-lg'>
      <img className='w-full' src={course.courseThumbnail} alt=""/>
       <div className='pb-3 text-left'>
-        <h3 className='text-base font-semibold'>GreatStack</h3>
+        <h3 className='text-base font-semibold'>{course.courseTitle}</h3>
         <p className='text-gray-500'>{course.educator.name}</p>
         <div className='flex itms-center space-x-2'>
           <p>{calculateRating(course)}</p>

@@ -206,7 +206,13 @@ const Coursedetails = () => {
                   <YouTube videoId={playerData.videoId} opts={{playerVars: {
                     autoplay : 1 }}} iframeClassName='w-full aspect-video'/>
                  
-                :     <img src={courseData.courseThumbnail} alt="" />
+                :   <img 
+  src={courseData.courseThumbnail.startsWith("http")
+    ? courseData.courseThumbnail
+    : backendUrl + courseData.courseThumbnail
+  } 
+  alt="course" 
+/>
            }
                
           <div className='p-5'>

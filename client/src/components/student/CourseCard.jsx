@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 const CourseCard = ({course}) => {
 
     const {currency, calculateRating} = useContext(AppContext)
+     console.log(course.courseThumbnail);
 
   return (
     <Link to={`/course/${course._id}`} onClick={() => scrollTo(0,0)} 
